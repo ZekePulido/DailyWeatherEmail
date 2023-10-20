@@ -4,7 +4,7 @@ api_key = '46b2e1d6b5adce1b8a59d7397849bd40'
 
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?'
 
-CITY = 'Starkville,us'  # The city parameter should be in the format 'city,country'
+CITY = ''  # The city parameter should be in the format 'city,country'
 
 url = BASE_URL + "q=" + CITY + "&appid=" + api_key
 
