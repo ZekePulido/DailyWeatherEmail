@@ -10,3 +10,15 @@ This app sends daily emails on what the weather will be for the current day.
 ```
 python gmail.py
 ```
+
+## How to automate:
+Currently, there is no way to automate it via code.
+
+If you want to automate it you can do it by adding the script into Task scheduler
+1. Click "Create Basic Task" on the application
+2. Set "Trigger" as daily
+3. Set the date and time you want it to start on
+4. Set "Action" to start program
+5. Set the script for the "Program/script"
+
+You are then good to go!
