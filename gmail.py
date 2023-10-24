@@ -3,16 +3,21 @@ import smtplib
 import ssl
 from email.message import EmailMessage
 from weather import email
+import datetime
+
+current_date = datetime.date.today()
+formatted_date = current_date.strftime("%m/%d/%Y")
+
 
 # Define email sender and receiver
-email_sender = 'sender email'
-email_password = 'password'  # Replace with your actual email password
-email_receiver = 'reciever email'
+email_sender = 'sending email' # Replace with actual sending email
+email_password = 'password for sending email'  # Replace with your actual email password
+email_receiver = 'receiving email' # Replace with receiving email
 
 text = email()
 
 # Set the subject and body of the email
-subject = 'Weather'
+subject = f'Weather {formatted_date}'
 
 # Use triple-quoted string to format the body
 body = f"""\
